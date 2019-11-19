@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/textViewNameCharac"
+                    android:layout_width="191dp"
+                    android:layout_height="23dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewLevel"
+                    app:layout_constraintHorizontal_bias="0.625"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textViewRace"
+                    android:layout_width="191dp"
+                    android:layout_height="23dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewLevel"
+                    app:layout_constraintHorizontal_bias="0.625"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewNameCharac" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="69dp"
+                    android:layout_height="69dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@android:drawable/alert_dark_frame" />
+
+                <TextView
+                    android:id="@+id/textViewProfe"
+                    android:layout_width="191dp"
+                    android:layout_height="23dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:gravity="center"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toStartOf="@+id/textViewLevel"
+                    app:layout_constraintHorizontal_bias="0.625"
+                    app:layout_constraintStart_toEndOf="@+id/imageView2"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewRace" />
+
+                <TextView
+                    android:id="@+id/textViewLevel"
+                    android:layout_width="69dp"
+                    android:layout_height="69dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageButton
+                    android:id="@+id/imageButtonEquipment"
+                    android:layout_width="87dp"
+                    android:layout_height="87dp"
+                    android:layout_marginStart="36dp"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginTop="140dp"
+                    android:onClick="Onclick"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@mipmap/ic_launcher_round" />
+
+            </android.support.constraint.ConstraintLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+
+
+
